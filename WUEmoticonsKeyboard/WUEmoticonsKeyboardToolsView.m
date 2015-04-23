@@ -33,6 +33,7 @@
         [self addSubview:backspaceButton];
         self.backspaceButton = backspaceButton;
         
+        // 表情分组
         UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithFrame:CGRectZero];
         segmentedControl.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [segmentedControl addTarget:self action:@selector(segmentedControlValueChanged:) forControlEvents:UIControlEventValueChanged];
@@ -42,6 +43,7 @@
         UIButton *spaceButton = [UIButton buttonWithType:UIButtonTypeCustom];
         spaceButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [spaceButton addTarget:self action:@selector(spaceButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        [spaceButton setBackgroundColor:[UIColor redColor]];
         [self addSubview:spaceButton];
         self.spaceButton = spaceButton;
     }

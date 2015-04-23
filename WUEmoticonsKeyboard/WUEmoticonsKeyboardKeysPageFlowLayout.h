@@ -6,6 +6,10 @@
 //  Copyright (c) 2013 微酷奥(北京)科技有限公司. All rights reserved.
 //
 
+// =========================================
+//    表情页 布局 
+// =========================================
+
 #import <UIKit/UIKit.h>
 
 @interface WUEmoticonsKeyboardKeysPageFlowLayout : UICollectionViewLayout
